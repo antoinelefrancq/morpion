@@ -1,0 +1,85 @@
+body{
+    font-size: 12px;
+    background-color: #141E61;
+}
+#container{
+    width: 85vw;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #eee;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    background-color: #787A91;
+    color: #eee;
+    margin: 0 0 1rem;
+    display: flex;
+    flex-direction: row;
+}
+nav{
+    width: 100%;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+li{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    flex-grow: 1;
+    text-align: center;
+}
+li:hover{
+    background-color: #eee;
+    color: #787A91;
+}
+#board{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cell{
+    border: 3px solid #666;
+    box-sizing: border-box;
+}
+
+.cell--mark{
+    background-image: url(../img/mark.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cell--circle{
+    background-image: url(../img/circle2.png);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#replayButton{
+    margin:1em auto;
+    padding: 2rem;
+    background-color: #141E61;
+    color: #eee;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    animation: all ;
+}
+
+#replayButton:hover{
+    background-color: #1b2b91;
+    padding: 2.1rem;
+}
